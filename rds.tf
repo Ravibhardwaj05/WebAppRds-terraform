@@ -19,8 +19,8 @@ resource "aws_db_instance" "database-instance" {
   engine_version         = "5.7"
   instance_class         = var.database-instance-class
   db_name                = "sqldb"
-  username               = "joesql"
-  password               = "qwertypoiu12"
+  username               = "admin"
+  password               = "admin"
   parameter_group_name   = "default.mysql5.7"
   skip_final_snapshot    = true
   availability_zone      = "us-east-1b"
